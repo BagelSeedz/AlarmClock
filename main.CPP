@@ -180,7 +180,7 @@ void loop()
   currentMillis = timeSetMillis + millis(); // Save time
  
   // Check if one minute has passed
-  if (currentMillis - previousMillis >= 60000) {
+  if (currentMillis - previousMillis > 60001) {
     previousMillis = currentMillis;
     minutes += 1;
     tempMinutes +=1;
